@@ -1,10 +1,11 @@
+# Using live data downloadable as APIs.  The below is based on a weather app.
 
 import requests
 
 data=requests.get("http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json")
 parseddata=data.json()
 
-print(parseddata['product'])
+print(parseddata['init'])
 
 
 
