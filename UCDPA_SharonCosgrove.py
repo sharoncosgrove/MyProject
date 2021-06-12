@@ -13,8 +13,8 @@ print(data.info())
 #3 Analysing Data - Describe is used to view statistical details like percentages, min and max figures
 print(data.describe())
 
-#To replace the gaps with "*"
-cleaned_data=data.fillna("*")
+#To replace the gaps with "0"
+cleaned_data=data.fillna(0)
 missing_val=cleaned_data.isnull().sum()
 print(missing_val)
 
@@ -22,4 +22,6 @@ print(missing_val)
 cleaned_data=data.fillna(data.mean)
 missing_val=cleaned_data.isnull().sum()
 print(missing_val)
+
+
 
